@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_1.xsd"
+        version="3.1">
+  <description>Formatting functions used by the PyJudge pages</description>
+  <tlib-version>1.0</tlib-version>
+  <short-name>pj</short-name>
+  <uri>http://pyjudge.com/functions</uri>
+
+  <function>
+    <description>Date and time as "2026-03-01 14:05" (UTC)</description>
+    <name>dt</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String dt(java.time.LocalDateTime)</function-signature>
+  </function>
+  <function>
+    <description>Month and year, e.g. "March 2026"</description>
+    <name>monthYear</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String monthYear(java.time.LocalDateTime)</function-signature>
+  </function>
+  <function>
+    <description>Value for a datetime-local input</description>
+    <name>formDt</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String formDt(java.time.LocalDateTime)</function-signature>
+  </function>
+  <function>
+    <description>Markdown rendered to HTML (raw HTML in the source is escaped)</description>
+    <name>md</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String md(java.lang.String)</function-signature>
+  </function>
+  <function>
+    <description>A value as JSON that is safe inside a script element</description>
+    <name>json</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String json(java.lang.Object)</function-signature>
+  </function>
+  <function>
+    <description>Percent-encodes a query string value</description>
+    <name>url</name>
+    <function-class>com.pyjudge.web.Fn</function-class>
+    <function-signature>java.lang.String url(java.lang.String)</function-signature>
+  </function>
+</taglib>

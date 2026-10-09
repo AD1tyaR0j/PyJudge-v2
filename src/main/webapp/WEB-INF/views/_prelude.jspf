@@ -1,0 +1,6 @@
+<%-- Included at the top of every JSP page (see jsp-config in web.xml). --%>
+<%@ page contentType="text/html;charset=UTF-8" session="false" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="pj" uri="http://pyjudge.com/functions" %>

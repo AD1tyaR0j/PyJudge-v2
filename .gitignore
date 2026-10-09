@@ -1,0 +1,20 @@
+# Build output
+target/
+*.class
+
+# Embedded demo database and local overrides
+data/
+*.mv.db
+*.trace.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
